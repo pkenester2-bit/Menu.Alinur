@@ -1,0 +1,386 @@
+{
+  "restaurant": {
+    "name": "QR Menu Restaurant",
+    "description_ru": "Цифровое меню для ресторана",
+    "description_kz": "Мейрамханаға арналған цифрлық мәзір",
+    "logoText": "QR",
+    "bookingPhone": "+7 777 000 00 00",
+    "address": "г. Алматы",
+    "mapLink": "",
+    "mapLink2gis": "",
+    "defaultLang": "ru"
+  },
+  "slides": [],
+  "translations": {
+    "ru": {
+      "home": "Главная",
+      "contacts": "Контакты",
+      "menu": "Меню",
+      "cart": "Корзина",
+      "call_waiter": "Вызвать официанта",
+      "close": "Закрыть",
+      "added": "Добавлено в корзину",
+      "success": "Успешно",
+      "empty_cart": "Корзина пуста",
+      "empty_results": "Здесь пока нет блюд",
+      "add": "Добавить",
+      "unavailable": "Нет в наличии",
+      "your_order": "Ваш заказ",
+      "no_modifiers": "Без модификаторов",
+      "total": "Итого",
+      "quantity": "Кол-во",
+      "show_waiter": "Показать официанту",
+      "waiter_list_title": "Список для официанта",
+      "hero_fallback": "Добавьте фото слайдера в menu.json",
+      "choose_category": "Выберите категорию меню",
+      "booking_phone": "Телефон",
+      "call_now": "Позвонить",
+      "no_booking_phone": "Телефон пока не указан",
+      "address": "Адрес",
+      "map": "Карта",
+      "show_to_waiter_hint": "Покажите этот список официанту.",
+      "ingredients": "Состав:"
+    },
+    "kz": {
+      "home": "Басты бет",
+      "contacts": "Байланыс",
+      "menu": "Мәзір",
+      "cart": "Себет",
+      "call_waiter": "Даяшы шақыру",
+      "close": "Жабу",
+      "added": "Себетке қосылды",
+      "success": "Сәтті",
+      "empty_cart": "Себет бос",
+      "empty_results": "Мұнда әзірге тағам жоқ",
+      "add": "Қосу",
+      "unavailable": "Қолжетімсіз",
+      "your_order": "Сіздің тапсырысыңыз",
+      "no_modifiers": "Қосымша опция жоқ",
+      "total": "Жалпы",
+      "quantity": "Саны",
+      "show_waiter": "Даяшыға көрсету",
+      "waiter_list_title": "Даяшыға арналған тізім",
+      "hero_fallback": "Слайдер суреттерін menu.json файлына қосыңыз",
+      "choose_category": "Мәзір санатын таңдаңыз",
+      "booking_phone": "Телефон",
+      "call_now": "Қоңырау шалу",
+      "no_booking_phone": "Телефон көрсетілмеген",
+      "address": "Мекенжай",
+      "map": "Карта",
+      "show_to_waiter_hint": "Осы тізімді даяшыға көрсетіңіз.",
+      "ingredients": "Құрамы:"
+    }
+  },
+  "categories": [
+    {
+      "id": 1,
+      "slug": "breakfasts",
+      "name_ru": "Завтраки",
+      "name_kz": "Таңғы ас",
+      "items": [
+        {
+          "id": 1,
+          "title_ru": "Омлет с трюфельным сыром",
+          "title_kz": "Ірімшік қосылған омлет",
+          "description_ru": "Нежный омлет с сыром и зеленью.",
+          "description_kz": "Жұмсақ омлет, ірімшік және көкпен.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 3200,
+          "weight": "220 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 2,
+          "title_ru": "Сырники с ванильным кремом",
+          "title_kz": "Ваниль кремі бар сырниктер",
+          "description_ru": "Домашние сырники с кремом.",
+          "description_kz": "Үй сырниктері креммен.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 2900,
+          "weight": "180 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "salads",
+      "name_ru": "Салаты",
+      "name_kz": "Салаттар",
+      "items": [
+        {
+          "id": 3,
+          "title_ru": "Салат Цезарь с курицей",
+          "title_kz": "Тауық еті қосылған Цезарь",
+          "description_ru": "Классический салат с курицей.",
+          "description_kz": "Тауық еті бар классикалық салат.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 3600,
+          "weight": "260 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 4,
+          "title_ru": "Греческий салат",
+          "title_kz": "Грек салаты",
+          "description_ru": "Свежие овощи и сыр фета.",
+          "description_kz": "Жаңа көкөністер мен фета ірімшігі.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 3100,
+          "weight": "250 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "soups",
+      "name_ru": "Супы",
+      "name_kz": "Сорпалар",
+      "items": [
+        {
+          "id": 5,
+          "title_ru": "Крем-суп из тыквы",
+          "title_kz": "Асқабақ крем-сорпасы",
+          "description_ru": "Нежный крем-суп из тыквы.",
+          "description_kz": "Асқабақтан жасалған жұмсақ крем-сорпа.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 2500,
+          "weight": "300 мл",
+          "available": true,
+          "badges": [
+            "hit"
+          ],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 6,
+          "title_ru": "Том Ям с креветками",
+          "title_kz": "Асшаян қосылған Том Ям",
+          "description_ru": "Острый азиатский суп.",
+          "description_kz": "Ащы азиялық сорпа.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 4200,
+          "weight": "350 мл",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "hot",
+      "name_ru": "Горячие блюда",
+      "name_kz": "Ыстық тағамдар",
+      "items": [
+        {
+          "id": 7,
+          "title_ru": "Стейк из говядины",
+          "title_kz": "Сиыр стейкі",
+          "description_ru": "Сочный стейк с гарниром.",
+          "description_kz": "Гарнирмен берілетін шырынды стейк.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 7900,
+          "weight": "320 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 8,
+          "title_ru": "Лосось терияки",
+          "title_kz": "Терияки лососі",
+          "description_ru": "Лосось в соусе терияки.",
+          "description_kz": "Терияки тұздығындағы лосось.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 6800,
+          "weight": "280 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "pizza",
+      "name_ru": "Пицца",
+      "name_kz": "Пицца",
+      "items": [
+        {
+          "id": 9,
+          "title_ru": "Пицца Маргарита",
+          "title_kz": "Маргарита пиццасы",
+          "description_ru": "Томатный соус, моцарелла, базилик.",
+          "description_kz": "Томат тұздығы, моцарелла, базилик.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 4300,
+          "weight": "540 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 10,
+          "title_ru": "Пицца Пепперони",
+          "title_kz": "Пепперони пиццасы",
+          "description_ru": "Пикантная пепперони и сыр.",
+          "description_kz": "Пепперони мен ірімшік.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 4700,
+          "weight": "560 г",
+          "available": true,
+          "badges": [
+            "hit"
+          ],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "burgers",
+      "name_ru": "Бургеры",
+      "name_kz": "Бургерлер",
+      "items": [
+        {
+          "id": 11,
+          "title_ru": "Бургер Классик",
+          "title_kz": "Классикалық бургер",
+          "description_ru": "Говяжья котлета, сыр, овощи.",
+          "description_kz": "Сиыр котлеті, ірімшік, көкөніс.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 3900,
+          "weight": "330 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 12,
+          "title_ru": "Бургер BBQ",
+          "title_kz": "BBQ бургер",
+          "description_ru": "Бургер с BBQ соусом.",
+          "description_kz": "BBQ тұздығы бар бургер.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 4300,
+          "weight": "350 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "desserts",
+      "name_ru": "Десерты",
+      "name_kz": "Десерттер",
+      "items": [
+        {
+          "id": 13,
+          "title_ru": "Тирамису",
+          "title_kz": "Тирамису",
+          "description_ru": "Итальянский десерт.",
+          "description_kz": "Итальян десерті.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 2700,
+          "weight": "160 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 14,
+          "title_ru": "Чизкейк Нью-Йорк",
+          "title_kz": "Нью-Йорк чизкейгі",
+          "description_ru": "Классический чизкейк.",
+          "description_kz": "Классикалық чизкейк.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 2600,
+          "weight": "150 г",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "drinks",
+      "name_ru": "Напитки",
+      "name_kz": "Сусындар",
+      "items": [
+        {
+          "id": 15,
+          "title_ru": "Лимонад Цитрус",
+          "title_kz": "Цитрус лимонады",
+          "description_ru": "Освежающий лимонад.",
+          "description_kz": "Сергітетін лимонад.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 1800,
+          "weight": "400 мл",
+          "available": true,
+          "badges": [
+            "hit"
+          ],
+          "image": "",
+          "modifiers": []
+        },
+        {
+          "id": 16,
+          "title_ru": "Кофе Латте",
+          "title_kz": "Латте кофесі",
+          "description_ru": "Классический латте.",
+          "description_kz": "Классикалық латте.",
+          "ingredients_ru": "Состав уточняйте у официанта.",
+          "ingredients_kz": "Құрамын даяшыдан нақтылаңыз.",
+          "price": 1700,
+          "weight": "300 мл",
+          "available": true,
+          "badges": [],
+          "image": "",
+          "modifiers": []
+        }
+      ]
+    }
+  ]
+}
