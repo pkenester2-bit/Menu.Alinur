@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Menu Editor</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="qr-admin-page">
+    <section class="qr-admin-toolbar">
+      <div>
+        <h1 style="margin:0 0 6px;">QR Menu Editor</h1>
+        <div class="qr-muted-note">Тағамдарды осы жерде өзгертіп, соңында <strong>menu.json</strong> экспорттайсыз. Бұл бетте сақтау серверге емес, браузерге және файлға жасалады.</div>
+      </div>
+      <div class="qr-admin-actions">
+        <button class="qr-chip" id="btnPreview" type="button">Открыть меню</button>
+        <button class="qr-chip" id="btnImport" type="button">Импорт JSON</button>
+        <button class="qr-chip" id="btnExport" type="button">Экспорт menu.json</button>
+        <button class="qr-chip qr-danger" id="btnReset" type="button">Сбросить демо</button>
+        <input type="file" id="importInput" accept=".json,application/json" hidden>
+      </div>
+    </section>
+
+    <section class="qr-admin-grid">
+      <div class="qr-admin-stack">
+        <section class="qr-admin-card">
+          <h2 style="margin-top:0;">Ресторан</h2>
+          <div class="qr-form-grid">
+            <div class="qr-field"><label>Название</label><input id="restaurantName"></div>
+            <div class="qr-field"><label>Логотип (2-3 символа)</label><input id="restaurantLogoText"></div>
+            <div class="qr-field"><label>Телефон</label><input id="restaurantPhone"></div>
+            <div class="qr-field"><label>Адрес</label><input id="restaurantAddress"></div>
+            <div class="qr-field"><label>Google Maps</label><input id="restaurantMap"></div>
+            <div class="qr-field"><label>2GIS</label><input id="restaurantMap2gis"></div>
+            <div class="qr-field"><label>Описание RU</label><textarea id="restaurantDescRu"></textarea></div>
+            <div class="qr-field"><label>Описание KZ</label><textarea id="restaurantDescKz"></textarea></div>
+          </div>
+        </section>
+
+        <section class="qr-admin-card">
+          <div class="qr-inline-actions" style="justify-content:space-between;">
+            <h2 style="margin:0;">Слайды</h2>
+            <button class="qr-chip" id="btnAddSlide" type="button">Добавить слайд</button>
+          </div>
+          <div class="qr-admin-list" id="slidesList"></div>
+        </section>
+
+        <section class="qr-admin-card">
+          <div class="qr-inline-actions" style="justify-content:space-between;">
+            <h2 style="margin:0;">Категории</h2>
+            <button class="qr-chip" id="btnAddCategory" type="button">Добавить категорию</button>
+          </div>
+          <div class="qr-admin-list" id="categoriesList"></div>
+        </section>
+      </div>
+
+      <div class="qr-admin-stack">
+        <section class="qr-admin-card">
+          <div class="qr-inline-actions" style="justify-content:space-between;">
+            <h2 style="margin:0;">Блюда</h2>
+            <div class="qr-inline-actions">
+              <select id="itemCategoryFilter"></select>
+              <button class="qr-chip" id="btnAddItem" type="button">Добавить блюдо</button>
+            </div>
+          </div>
+          <div class="qr-admin-list" id="itemsList"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="assets/admin.js"></script>
+</body>
+</html>
